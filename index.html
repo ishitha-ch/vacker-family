@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Project 78</title>
+    </head>
+    <body>
+        <center>
+        <h1>Vacker Family from the book series "Keeper of the Lost Cities"</h1>
+        <br>
+        <br>
+        <br>
+        <img src="https://shannonmessenger.com/wp-content/uploads/2019/11/Vacker_Portrait.jpg" style="height: 40%;" id="member_img">
+        <h4 id="name">Vacker Family</h4>
+        <br>
+        <p id="info" style="max-width: 550px;">The Vackers are a legendary family in the Keeper series. Everyone knows them and loves them. They have many family members who did great things.</p>
+        <button onclick="change()">Next</button>
+        <br>
+        <br>
+        <br>
+        <h5> Art By: Laura Hollingsworth
+            <br>
+            Author: Shannon Messenger
+        </h5>
+    </center>
+        <script>
+            var images=["https://shannonmessenger.com/wp-content/uploads/2019/11/Alden.jpg","https://shannonmessenger.com/wp-content/uploads/2019/11/Della.jpg","https://shannonmessenger.com/wp-content/uploads/2019/11/Alvar.jpg","https://shannonmessenger.com/wp-content/uploads/2019/11/Fitz.jpg","https://shannonmessenger.com/wp-content/uploads/2019/11/Biana.jpg"];
+            var names=["Alden Dedrick Vacker","Della Adara Vacker","Alvar Soren Vacker","Fitzroy Avery Vakcer", "Biana Amberly Vacker"];
+            var info=["Alden is the father of Alvar, Fitz, and Biana. He is known to be very overprotective of his kids and other kids by saying NO REASON TO WORRY. He is a Telepath and has the unique teal eyes of the Vackers.", 
+            "Della is the mother of Alvar, Fitz, and Biana. She is stated to be the most beautiful person by Sophie, who is the main character in the series. Della is one of the most talented Vanishers and has cobalt blue eyes.",
+            "Alvar is the oldest son of Alden and Della. In Neverseen, we find out that Alvar is a part of Neverseen, who are an evil band of rebels. Alvar is a talented Vanisher like his mother and has cobalt blue eyes like her, too.",
+            "Fitz is the second oldest son of Alden and Della. In the first book, he is the one who finds Sophie. He plays a big part throughout the books. He was the Cognate of Sophie and is known to have a lot of trust and anger issues. He is a Telepath like his father and has teal eyes like him, too.",
+            "Biana is the youngest and only daughter of Alden and Della. She one of Sophie's best friends and plays a big part in the series just like Fitz. Biana is known to be very beautiful, loves dresses makeup and fashion, and she is very popular in school. Biana is a very talented Vanisher like her mother but has teal eyes like her father."];
+            var i=0;
+            var numbers_of_name=4
+            function change()
+            {
+                
+                if(i>numbers_of_name)
+                {
+                    i=0;
+                }
+                var updatedImages=images[i];
+                var updatedNames=names[i];
+                var updatedInfo=info[i];
+                document.getElementById("member_img").src=updatedImages;
+                document.getElementById("name").innerHTML=updatedNames;
+                document.getElementById("info").innerHTML=updatedInfo;
+                i++
+            }
+        
+        </script>
+    </body>
+</html>
